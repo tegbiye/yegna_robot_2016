@@ -1,0 +1,101 @@
+<?xml version="1.0"?> 
+<robot > 
+	 <gazebo>
+		<plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">  
+	 </plugin>
+	</gazebo>
+  
+	<gazebo reference="base_link">
+		<material>Gazebo/Grey</material>
+		<gravity>true</gravity>
+	</gazebo>
+	  
+    <gazebo reference = "body_link">
+       <material>Gazebo/Blue</material>
+    </gazebo> 
+  
+    <gazebo reference = "neck_link">
+       <material>Gazebo/Grey</material>
+    </gazebo>  
+  
+    <gazebo reference = "camera_head">
+       <material>Gazebo/Cyan</material>
+    </gazebo>
+  
+    <gazebo reference = "body_back_left">
+     <material>Gazebo/Grey</material>
+    </gazebo> 
+  
+   <gazebo reference = "left_link">
+     <material>Gazebo/Blue</material>
+  </gazebo> 
+  
+  <gazebo reference = "left_leg">
+   <material>Gazebo/Grey</material>
+  </gazebo>
+  
+  <gazebo reference = "foot_left_one">
+   <material>Gazebo/Grey</material>
+  </gazebo>
+  
+  <gazebo reference = "foot_left_two">
+   <material>Gazebo/Grey</material>
+  </gazebo> 
+  
+  <gazebo reference = "body_back_right">
+   <material>Gazebo/Grey</material>
+  </gazebo>
+   
+  <gazebo reference = "right_link">
+   <material>Gazebo/Blue</material>
+  </gazebo>  
+   
+  <gazebo reference = "right_leg">
+   <material>Gazebo/Grey</material>
+  </gazebo>
+   
+  <gazebo reference = "foot_right_one">
+   <material>Gazebo/Grey</material>
+  </gazebo>
+  
+  <gazebo reference = "foot_right_two">
+   <material>Gazebo/Grey</material>
+  </gazebo>
+  
+  <gazebo reference = "camera_head">
+   <sensor name = "camera" type = "camera">
+     <pose>-0.050000 -0.010000 0.000000 -1.5708 0.000000 -3.141592</pose>   
+    <camera name = "__default__">
+     <horizontal_fov>1.012300</horizontal_fov>  
+     <image>
+       <width>320</width>
+       <height>200</height>
+     </image>
+      
+     <clip>
+       <near>0.001000</near>
+       <far>100.000000</far> 
+     </clip>   
+    </camera>
+    
+    <always_on>1</always_on>
+    <update_rate>30.0000000</update_rate>
+    <visualize>1</visualize>
+    <plugin name = "camera_controller" filename = "libgazebo_ros_camera.so">
+		 <alwaysOn>true</alwaysOn>
+		 <updateRate>30</updateRate>
+		 <cameraName>yegna_pkg/camera</cameraName>
+		 <imageTopicName>image_raw</imageTopicName>
+		 <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+		 <frameName>camera_link</frameName>
+		 <hackBaseline>0.07</hackBaseline>
+		 <distortionk1>0.0</distortionk1>
+		 <distortionk2>0.0</distortionk2>
+		 <distortionk3>0.0</distortionk3>
+		 <distortionT1>0.0</distortionT1>
+		 <distortionT2>0.0</distortionT2>
+	 </plugin> 
+  </sensor>	
+</gazebo> 
+  
+</robot>

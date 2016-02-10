@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "yegna_pkg")
+set(yegna_pkg_MAINTAINER "tegbiye <tegbiye@todo.todo>")
+set(yegna_pkg_DEPRECATED "")
+set(yegna_pkg_VERSION "0.0.0")
+set(yegna_pkg_BUILD_DEPENDS "roscpp" "std_msgs")
+set(yegna_pkg_RUN_DEPENDS "roscpp" "std_msgs")
+set(yegna_pkg_BUILDTOOL_DEPENDS "catkin")

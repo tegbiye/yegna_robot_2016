@@ -1,0 +1,8 @@
+prefix=/home/tegbiye/Desktop/Robotics_Lab/yegna_robot/install
+
+Name: yegna_pkg
+Description: Description of yegna_pkg
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/tegbiye/Desktop/Robotics_Lab/yegna_robot/install/lib 
+Requires: 

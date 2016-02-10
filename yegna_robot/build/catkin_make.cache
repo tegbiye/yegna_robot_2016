@@ -1,0 +1,2 @@
+yegna_pkg
+-DCATKIN_DEVEL_PREFIX=/home/tegbiye/Desktop/Robotics_Lab/yegna_robot/devel -DCMAKE_INSTALL_PREFIX=/home/tegbiye/Desktop/Robotics_Lab/yegna_robot/install -G Unix Makefiles
