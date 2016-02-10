@@ -24,7 +24,7 @@ In general the simple robot have
   - right_link
   - foot_right_one
   - foot_right_two
-  - 
+  
 
 to run and use it 
   1- first need to clone it to desktop
