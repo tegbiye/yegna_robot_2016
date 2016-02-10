@@ -4,7 +4,7 @@
   <!-- Macro for simple_legged_robot body.  -->
   
   	
-  	<xacro:include filename="chassis.gazebo" /> 
+  <xacro:include filename="chassis.gazebo" /> 
   	
   	
    <link name = "base_link"/>
@@ -14,7 +14,7 @@
       <child link="body_link"/>
     </joint>
      	
-  	<link name="body_link">
+  <link name="body_link">
     <inertial>
       <origin xyz="-0.003053 -0.038651 -0.019268" />
       <mass value="0.97559947"/>
@@ -39,7 +39,7 @@
   </link>
   
   	
-  	<link name="camera_head">
+   <link name="camera_head">
     <inertial>
       <origin xyz="0.000064 -0.018565 -0.007667" />
       <mass value="0.15804192"/>
@@ -149,9 +149,7 @@
     </collision>
 
   </link>  
-    
-	  
-	  <joint name="body_back_left_joint" type="fixed">
+ 	  <joint name="body_back_left_joint" type="fixed">
         <parent link="body_link"/>
           <child link="body_back_left"/>
           <origin xyz="0 0.06035 0" rpy="-1.5707963 0 0" />
@@ -167,8 +165,6 @@
                      
                 </geometry>
                <!-- <origin xyz="0 0 -0.3" rpy="0 1.57075 0" /> -->
-                
-              <!-- <origin xyz="-0.13522619 -0.010264050 0.0013935747" /> -->
                <origin xyz="-0.05 -0.010264050 0.0013935747" />
 	     
 	    	<material name="Blue">
@@ -360,9 +356,7 @@
                      
                 </geometry>
                <!-- <origin xyz="0 0 -0.3" rpy="0 1.57075 0" /> -->
-                
-               <!--  <origin xyz="0.13523 -0.010264 0.001394" /> -->
-                <origin xyz="0.05 -0.010264 0.001394"/>
+              <origin xyz="0.05 -0.010264 0.001394"/>
 	    
              
 	    	<material name="Blue">
