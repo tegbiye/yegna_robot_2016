@@ -11,7 +11,7 @@
 	</gazebo>
 	  
     <gazebo reference = "body_link">
-       <material>Gazebo/Blue</material>
+       <material>Gazebo/Grey</material>
     </gazebo> 
   
     <gazebo reference = "neck_link">
@@ -62,6 +62,7 @@
    <material>Gazebo/Grey</material>
   </gazebo>
   
+   <!-- the Camera Sensor -->
   <gazebo reference = "camera_head">
    <sensor name = "camera" type = "camera">
      <pose>-0.050000 -0.010000 0.000000 -1.5708 0.000000 -3.141592</pose>   
